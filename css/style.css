@@ -14,15 +14,11 @@ body {
   flex-wrap: wrap;
 }
 
-main {
-  height: min-content;
-  align-self: center;
-}
-
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
-  height: min-content;
+  height: auto;
+  z-index: 5555;
 }
 
 .discount {
@@ -37,13 +33,19 @@ header {
   background: #00669F;
 }
 
+main {
+  height: min-content;
+  align-self: center;
+  padding-top: 8rem;
+}
+
 .card-container {
   position: relative;
   width: 100%;
+  height: 100%;
   padding: 3rem 1rem;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
   row-gap: 3rem;
   column-gap: 1.6rem;
 }
@@ -88,7 +90,7 @@ header {
 .card-content {
   background: #F3F3F3;
   text-align: center;
-  padding: 4.5rem 1rem 2rem 1rem;
+  padding: 4.5rem 2rem 2rem;
   box-shadow: 0 4px 4px -2px rgba(0 0 0 / .6);
 }
 
